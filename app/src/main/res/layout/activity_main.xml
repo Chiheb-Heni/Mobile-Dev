@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="410dp"
+    android:layout_height="730dp"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+
+    android:background="@drawable/app_background">
+
+
+    <RadioGroup
+        android:id="@+id/jeuneRadioGroup"
+        android:layout_width="400dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal">
+
+    </RadioGroup>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"
+        android:text="Votre age: "
+        android:textSize="20sp"/>
+        <SeekBar
+            android:id="@+id/ageSeekBar"
+            android:layout_width="400dp"
+            android:layout_marginTop="180dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="0dp"
+            android:max="119"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/helloWorldTextView"
+            android:layout_width="400dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Mesure de niveau de glycémie"
+            android:gravity="center"
+            android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/calculerButton"
+        android:layout_width="400dp"
+        android:layout_marginTop="500dp"
+        android:layout_height="60dp"
+        android:text="Consulter" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center"
+        android:text="Est-ce que vous jeûnez ?"
+        android:textSize="20sp"/>
+    <RadioButton
+            android:id="@+id/rbtOui"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+        android:layout_marginTop="300dp"
+            android:checked="true"
+            android:text="Oui"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    <RadioButton
+        android:id="@+id/rbtNon"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_marginTop="300dp"
+        android:layout_marginHorizontal="200dp"
+
+
+        android:text="Non"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:hint="Valeur mesuree (en mmol/l)" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="230dp"
+        android:background="#000000" />
+</RelativeLayout>
+
